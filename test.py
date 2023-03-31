@@ -10,14 +10,14 @@ if __name__ == '__main__':
                   [2.21, 3.65 - a, 1.69, 6.99]])
     f = np.array([-10.65 + a, 12.21, 15.45 - a, -8.35])
 
-    print(sleSol.Gauss(A, f))
+    print(sleSol.gauss(A, f))
     print()
 
-    print(sleSol.GaussSeidelMethod(A, f, 1e-5))
+    print(sleSol.gaussSeidelMethod(A, f, 1e-5))
     print()
 
     print(sleSol.squareRootMethod(A, f, 1e-5))
     print()
 
-    print(sleSol.SimpleIterationMethod(A, f, 1e-5))
+    print(sleSol.simpleIterationMethod(A, f, 1e-5))
 

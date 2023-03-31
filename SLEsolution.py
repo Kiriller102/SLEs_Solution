@@ -19,7 +19,7 @@ def mul(A, B):
                 C[i][j] += A[i][t] * B[t][j]
 
 
-def Gauss(A, f):
+def gauss(A, f):
     n = len(A)
     M = np.array(A)
     b = np.array(f)
@@ -165,7 +165,7 @@ def squareRootMethod(A, f, eps):
     return x
 
 
-def SimpleIterationMethod(A, f, eps):
+def simpleIterationMethod(A, f, eps):
     M = np.array(A)
     b = np.array(f)
     n = len(A)
@@ -242,7 +242,7 @@ def SimpleIterationMethod(A, f, eps):
     return x_l
 
 
-def GaussSeidelMethod(A, f, eps):
+def gaussSeidelMethod(A, f, eps):
     n = len(A)
     M = np.array(A)
     b = np.array(f)
